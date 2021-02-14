@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="jumbotron" style='text-align: center;'>
+        <h2>Sign Up if you want to upload notes </h2>
+
+        <form class="" action="upload.html" method="post">
+            {{form.hidden_tag()}}
+            <br>
+            <br>
+            {{form.userName.label}}{{form.userName()}}
+            <br>
+            <br>
+            {{form.userEmail.label}}{{form.userEmail()}}
+            <br>
+            <br>
+
+
+            
+        </form>
+    </div>
+
+{% endblock %}
